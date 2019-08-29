@@ -1,0 +1,363 @@
+/*-- Google Font --*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+/*-- Common Style --*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  line-height: 26px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  visibility: visible;
+  font-family: "Poppins", sans-serif;
+  color: #191919;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #383838;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+
+h1 {
+  line-height: 1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+   text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 13px;
+  line-height: 16px;
+   text-align: center;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8a8f6a;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+a, button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a, button, img, input, span {
+  transition: all 0.3s ease 0s;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+
+a:hover {
+  border-left: 5px solid #8a8f6a;
+  background: #fafafa;
+  font-size: 16px;
+  font-style: italic;
+  margin: 30px 0;
+  padding: 20px 10px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.col ul {
+  list-style: outside none;
+
+}
+
+.display-img img{
+
+  border-radius: 50%;
+}
+
+
+.display-img img:hover{
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+
+.sidecolumn {
+  float: left;
+  width: 15%
+  margin-right: 20px;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  background-image: linear-gradient(to bottom, #fff, #fcfcf7);
+}
+.maincolumn {
+  float: left;
+  width: 85%
+  height:100%;
+  padding: 40px;
+
+}
+/*Responsive layout*/
+@media screen and (max-width: 600px) {
+  .leftcolumn, .maincolumn{
+    width: 100%;
+  }
+}
+
+
+.footer{
+  text-align: center;
+  padding: 10px;
+
+  /*position: -webkit-sticky; /* Safari 
+  position: sticky;
+  bottom: 0;*/
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.content{
+
+  margin: 10px;
+  padding: 5px;
+}
+.star-wrapper{
+  align-self: center;
+}
+
+/* Create five equal columns that floats next to each other */
+.col {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 120px;
+}
+
+
+
+/* Clear floats after the columns */
+.content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*--
+    sidebar css
+------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar-wrap {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sidebar-wrap {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .sidebar-wrap {
+    margin-top: 60px;
+  }
+}
+
+
+
+.sidebar h4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+.sidebar ul > li {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.sidebar ul > li:last-child {
+  margin-bottom: 0px;
+}
+.sidebar ul > li > a {
+  font-size: 15px;
+  display: block;
+  font-weight: 450;
+}
+.sidebar ul > li > a span {
+  float: right;
+}
+
+
+.smallcol{
+  padding: 5px;
+  float: left;
+  width: 50%
+}
+
+/*--
+    main content css
+------------------------------*/
+.maincolumn {
+  padding-top: 20px;
+  padding-left: 40px;
+  height: 100%;
+}
+
+.rowside {
+  padding: 15px;
+  background-image: linear-gradient(to right, #fff, #fcfcf7);
+  height: 20%;
+  text-align: center;
+}
+
+.rowmiddle {
+  margin-top: 20px;
+  padding: 20px;
+  height: 80%;
+}
+
+.prof {
+  display: flex;
+  margin-left: 30px;
+}
+/*-- Margin Top --*/
+.mt--10 {
+  margin-top: 10px;
+}
+
+.mt--40 {
+  margin-top: 40px;
+}
+
+/*-- Margin Bottom --*/
+.mb--5 {
+  margin-bottom: 5px;
+}
+
+.mb--30 {
+  margin-bottom: 30px;
+}
+
+.mb--30 {
+  margin-bottom: 45px;
+}
+
+.mb--120 {
+  margin-bottom: 120px;
+}
+
+/*-- Margin left --*/
+.ml--90 {
+  margin-left: 90px;
+}
+
+.ml--100 {
+  margin-left: 100px;
+}
+
+.ml--110 {
+  margin-left: 110px;
+}
+
+.ml--115 {
+  margin-left: 110px;
+}
+
+.ml--120 {
+  margin-left: 120px;
+}
+
