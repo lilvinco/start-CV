@@ -32,21 +32,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  line-height: 1;
-  font-weight: 700;
-}
-
-h2 {
   font-size: 30px;
   line-height: 30px;
   margin-top: 5px;
   text-align: center;
 }
 
-h3 {
-  font-size: 20px;
+h2 {
+  font-size: 18px;
   line-height: 25px;
    text-align: center;
+}
+
+h3 {
+  
 }
 
 h4 {
@@ -102,8 +101,8 @@ a:hover {
   background: #fafafa;
   font-size: 16px;
   font-style: italic;
-  margin: 30px 0;
-  padding: 20px 10px;
+  margin: 20px 0;
+  padding: 10px 10px;
 }
 
 
@@ -140,11 +139,19 @@ ul {
 .sidecolumn {
   float: left;
   width: 15%
-  margin-right: 20px;
-  padding: 15px;
+  margin: 20px, 0px, 10px, 0px;
+  padding: 10px;
   border-right: 1px solid #ddd;
   background-image: linear-gradient(to bottom, #fff, #fcfcf7);
 }
+
+.sidebar .sidecolumn a:hover{
+  border-left: 0px solid #8a8f6a;
+  background: #fafafa;
+  margin: 0px 0;
+  padding: 0px 0px;
+}
+
 .maincolumn {
   float: left;
   width: 85%
@@ -359,5 +366,179 @@ ul {
 
 .ml--120 {
   margin-left: 120px;
+}
+
+
+
+.contact-btn {
+  margin-left: 24px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  height: auto;
+  box-shadow: none;
+  border-color: #654321;
+  font-weight: 400;
+  background: transparent;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+@media only screen and (max-width: 479px) {
+  .contact-btn {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contact-btn {
+    margin-left: 15px;
+  }
+}
+
+.contact-form {
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.contact-form-content {
+  display: none;
+  position: relative;
+  width: 50%;
+  background-image: linear-gradient(to bottom, #fff, #fcfcf7);;
+  right: 0;
+  margin:0px ;
+  padding: 20px 0px;
+  z-index: 1;
+}
+
+.contact-form-content a {
+  text-decoration: none;
+  display: none;
+}
+
+.contact-form-content a:hover {
+  background-color: #8a8f6a;}
+
+.contact-form:hover .contact-form-content {
+  display: block;
+}
+
+.contact-form:hover .contact-btn {
+  border-top: 5px solid #8a8f6a;
+  background: #fafafa;
+  font-size: 16px;
+  font-style: italic;
+  margin: 5px 0;
+  padding: 5px 5px;
+
+}
+
+.contact-form .dropdown-menu {
+  width: 290px;
+  margin:0px auto;
+}
+@media only screen and (max-width: 767px) {
+  .contact-form .dropdown-menu {
+    transform: translate3d(45px, 0px, 0px) !important;
+  }
+}
+
+
+
+
+.contact-title > h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-input {
+  display: block;
+  margin: 0 -10px;
+  overflow: hidden;
+}
+
+.contact-inner {
+  float: left;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .contact-inner {
+    width: 100%;
+  }
+}
+.contact-inner input, .contact-inner textarea {
+  border: 1px solid #dddddd;
+  color: #222222;
+  font-size: 14px;
+  height: 45px;
+  padding-left: 15px;
+  width: 100%;
+}
+.contact-inner.contact-message {
+  width: 100%;
+}
+.contact-inner.contact-message textarea {
+  height: 105px;
+  padding: 10px;
+}
+
+.contact-submit-btn .submit-btn {
+  background: #333333 none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.contact-submit-btn .submit-btn:hover {
+  background: #8a8f6a;
+}
+
+.contact-submit-btn .close {
+  background: #8a8f6a none repeat scroll 0 0;
+  border: 2px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.contact-submit-btn .close:hover {
+  background: #333333;
+}
+
+.form-messege {
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.form-messege.error {
+  color: red;
+  font-style: italic;
+}
+.form-messege.success {
+  color: #008000;
+  font-style: italic;
 }
 

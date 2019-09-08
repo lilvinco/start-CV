@@ -9,7 +9,6 @@
 		<!-- Main Style CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-
 	<body>
 		<div class="row">
             	<div class="sidecolumn">
@@ -64,13 +63,49 @@
                 <!-- content-details-wrapper start -->
                 <div class="cv-details-wrapper">	
                 	<div class="rowside">
-                		<center><p>A creative young engineering student passionate about learning, innovation and entreprenuership. He is a communications and networking expert also open to new opportunities.</p><p> When he is not learning or working, he engages in sports, explores good music and eats delicious food.</p></center>
-                	</div>
-                	<div class="rowmiddle">
-                		<div class="content-wrapper">
-		            		<div class="content">
-		            			<div class="column">
-		            				<center>
+                		<center><p>A creative young engineering student passionate about learning, innovation and entreprenuership. He is a communications and networking expert also open to new opportunities in Software Development.</p><p> When he is not learning or working, he engages in sports, explores good music and eats delicious food.</p></center>
+
+                		 <div class="contact-form" style= "">
+                            <!--Button start -->
+                            <button class="dropdown-toggle"><i></i> Get in touch</button>
+                                 <div class="contact-form-content">
+                                 	<div class="dropdown-menu">
+			                            <div class="contact-title">
+			                                <h3>SEND ME A MESSAGE</h3>
+			                            </div>
+			                            <form name="contact-form" method="post" action="#" onsubmit="return validateform()">
+			                               <div class="contact-page-form">
+			                                   <div class="contact-input">
+			                                        <div class="contact-inner">
+			                                            <input name="fullname" type="text" placeholder="Full Name *" id="fullname" required="" minlength="4">
+			                                        </div>
+			                                       
+			                                        <div class="contact-inner">
+			                                            <input type="text" placeholder="Email *" id="email" name="email" required="" pattern="a@b.com">
+			                                        </div>
+			                                        <div class="contact-inner">
+			                                            <input name="subject" type="text" placeholder="Subject" id="subject">
+			                                        </div>
+			                                        <div class="contact-inner contact-message">
+			                                            <textarea name="message"  placeholder="Message *" required="" maxlength="20"></textarea>
+			                                        </div>
+			                                    </div>
+			                                    <div class="contact-submit-btn">
+			                                        <button class="submit-btn" type="submit">Send Email</button>
+			                                        <p class="form-messege"></p>
+			                                    </div>
+			                               </div>
+			                         </form>
+			                    </div>
+			                    <script src="main.js"></script>
+			                </div>
+				        </div>
+                    </div>
+			    	<div class="rowmiddle">
+			    		<div class="content-wrapper">
+			        		<div class="content">
+			        			<div class="column">
+			        				<center>
 									<h3>Kewalram Nigeria Limited</h3>
 									<hr>
 									<h6>Oct - Dec 2018</h6>
@@ -80,10 +115,10 @@
 										<li>Conduct quality assurance tests</li>
 										<li>Use special computers to run tests on vehicles</li>
 									</ul>
-		            			</div>
+			        			</div>
 
-		            			<div class="column">
-		            				<center>
+			        			<div class="column">
+			        				<center>
 									<h3>Madsuite Technologies</h3>
 									<hr>
 									<h6>Port-Harcout, Rivers</h6>
@@ -93,10 +128,10 @@
 										<center><li>Build strong teams and facilitate growth</li></center>
 										<center><li>Develop awesome products for clients</li></center>
 									</ul>
-		            			</div>
+			        			</div>
 
-		            			<div class="column">
-		            				<center>
+			        			<div class="column">
+			        				<center>
 									<h3>Lubrisac Oil</h3>
 									<hr>
 									<h6>Oct - Dec 2017</h6>
@@ -106,8 +141,8 @@
 										<li>Record and report lab results</li>
 										<li>Use special computers to run tests on lubricants</li>
 									</ul>
-		            			</div>
-		            		</div>
+			        			</div>
+			        		</div>
 							<div class="content mt--40">
 								<div class="column">
 									<center>
@@ -180,15 +215,13 @@
 							
 						</div>
 				        </div>
-				       </div>
-			        <div class="rowside">
-			        	<div class="footer">
-			        		<center>With ♥ from Victor Mba</center>
+			        	<div class="rowside">
+				        	<div class="footer">
+				        		<center>With ♥ from Victor Mba</center>
+				        	</div>
 			        	</div>
-			        </div>
                 	</div>
                 </div>
             </div>
-		</div>
 	</body>
 </html>
